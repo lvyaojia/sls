@@ -27,7 +27,7 @@ if float("%d.%d" % sys.version_info[:2]) < 2.6 or float("%d.%d" % sys.version_in
     sys.stderr.write("log service SDK requires Python version 2.6 and 2.7.\n")
     sys.exit(1)
 
-install_requires = []
+install_requires = ['protobuf==3.0.0b2.post2']
 try:
     import json
 except ImportError:
